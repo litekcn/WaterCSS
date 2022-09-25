@@ -1,0 +1,37 @@
+@import "../customize/components/breadcrumb";
+
+.#{$prefix}breadcrumb {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+
+	background-color: var(--breadcrumb-background-color);
+	border: var(--breadcrumb-border);
+	border-radius: var(--breadcrumb-border-radius);
+	color: var(--breadcrumb-color);
+	padding: var(--breadcrumb-padding-y) var(--breadcrumb-padding-x);
+	margin-bottom: var(--breadcrumb-margin-bottom);
+}
+
+.#{$prefix}breadcrumb-item {
+	font-size: var(--breadcrumb-font-size);
+
+  + .#{$prefix}breadcrumb-item {
+  	padding-left: var(--breadcrumb-padding-item-x);
+
+    &::before {
+    	float: left;
+    	padding-right: var(--breadcrumb-padding-item-x);
+    	content: $breadcrumb-content;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--breadcrumb-item-link-color);
+
+    &:hover {
+    	text-decoration: underline;
+    }
+  }
+}

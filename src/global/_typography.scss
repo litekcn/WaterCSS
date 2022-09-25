@@ -1,0 +1,260 @@
+#{$prefix}typo {
+  line-height: 1.8;
+  word-wrap: break-word;
+  
+  footer {
+    font-size: 12px;
+    margin-top: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  address, caption, cite, code, dfn, th {
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  caption, th {
+    text-align: left;
+  }
+
+  q::before, q::after {
+    content: '';
+  }
+
+  pre, code, kbd, samp, pre tt {
+    font-family: 'Fira Code', Consola, 'JetBrainsMono', 'Roboto Mono', 'Ubuntu Mono', Monospace, Courier;
+  }
+
+  figcaption {
+    color: #BBBBBB;
+    font-size: 80%;
+  }
+
+  [draggable],
+  [draggable="true"] {
+    cursor: move;
+  }
+
+  [draggable="false"] {
+    cursor: inherit;
+  }
+
+  p, pre, ul, ol, dl, form, hr, figure, table {
+    margin: 0 0 1.2em 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /* a */
+  a:not(.wux-btn) {
+    color: map.get($color-primary-map, "600");
+    text-decoration: none;
+    transition: $global-animation-speed;
+
+    &:hover {
+      color: map.get($color-primary-map, "700");
+      text-decoration: underline;
+    }
+  }
+
+  /* small */
+  small {
+    font-size: 80%;
+  }
+
+  /* mark */
+  mark {
+    background: transparent;
+    position: relative;
+    margin: 2px 4px;
+    color: #464646;
+    
+    &:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      background-color: #fffdd1;
+      top: -2px;
+      bottom: -2px;
+      left: -4px;
+      right: -4px;
+      border-radius: 4px;
+    }
+  }
+
+  /* h1 - h6 */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    color: inherit;
+    font-family: inherit;
+    line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  /* Code */
+  code {
+    padding: 2px 6px;
+    color: #c7254e;
+    // background-color: #f7f7f9;
+    border-radius: 6px;
+  }
+
+  /* Pre Code */
+  pre code {
+    margin: 2px;
+    padding: 0 !important;
+    color: inherit;
+    font-size: inherit;
+    line-height: 1.6;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  /* abbr */
+  abbr[title] {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    cursor: help;
+  }
+
+  /* ins */
+  ins {
+    text-decoration: none;
+    border-bottom: 1px solid ;
+  }
+
+  /* u */
+  u {
+    text-decoration: none;
+    position: relative;
+    
+    &:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      background-color: #AAAAAA;
+      top: 85%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      border-radius: 4px;
+    }
+  }
+
+  /* del */
+  del {
+    text-decoration: line-through;
+  }
+
+  /* hr */
+  hr {
+    height: 10px;
+    margin-bottom: 0.8em;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  /* pre */
+  pre {
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    border: 2px solid #CCCCCC;
+    border-radius: 12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* kbd */
+  kbd {
+    padding: 4px 8px;
+    color: #fff;
+    font-size: 90%;
+    background-color: #333;
+    border-radius: 6px;
+  }
+
+  /* ul / ol */
+  ul {
+    padding-left: 2em;
+    list-style: disc;
+  }
+  ol {
+    padding-left: 2em;
+    list-style: decimal;
+  }
+  li ul,
+  li ol {
+    margin: 0;
+  }
+  li ul {
+    list-style: circle;
+  }
+
+  /* img, video */
+  img, video {
+    max-width: 100%;
+  }
+
+  figure {
+    text-align: center;
+
+    figcaption {
+      margin-top: 8px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    figcaption:empty::before {
+      z-index: -1;
+      color: #bfbfbf;
+      cursor: text;
+      content: attr(placeholder);
+    }
+  }
+
+  blockquote {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='40px'><text x='0' y='50' fill='rgb(200, 200, 200)' font-size='50' stroke-width='2px' stroke='rgb(200, 200, 200)'>%E2%80%9D</text></svg>");
+    background-repeat: no-repeat;
+    background-position: left 2px top;
+    margin: 0;
+    padding-inline-start: 35px;
+  }
+}

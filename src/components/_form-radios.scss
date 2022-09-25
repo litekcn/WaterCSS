@@ -1,0 +1,35 @@
+@import "../customize/components/form-radios";
+
+.#{$prefix}form-radios {
+	appearance: none;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	
+	border: var(--form-radios-border-width) solid var(--form-radios-border-color);
+	border-radius: var(--form-radios-border-radius);
+	cursor: pointer;
+	width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  vertical-align: middle;
+  transition: var(--global-animation-speed);
+    -webkit-transition: var(--global-animation-speed);
+
+  &:not(:disabled):not(:checked):hover {
+  	background-color: var(--form-radios-hover-background-color);
+  	box-shadow: var(--form-radios-hover-shadow);
+  }
+	
+	&:checked {
+		background-color: var(--form-radios-checked-background-color);
+    background-repeat: no-repeat;
+		border: var(--form-radios-checked-border-width) solid var(--form-radios-checked-border-color);
+		box-shadow: var(--form-radios-checked-shadow);
+	}
+
+	&:disabled {
+		cursor: default;
+		filter: grayscale(1);
+		opacity: 30%;
+	}
+}

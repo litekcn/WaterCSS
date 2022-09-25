@@ -1,0 +1,25 @@
+
+@charset "UTF-8";
+
+@use "sass:map";
+
+  @import "functions/func-color";
+    @import "customize/prefix/prefix";
+    @import "customize/color/colors";   
+    @import "global/globalAnimationSpeed";
+    @import "global/globalFonts";
+    @import "global/globalStyles";
+    @import "../node_modules/normalize.css/normalize";;
+  @import "layout/container";
+  @import "layout/responsiveDisplay";
+  @import "layout/responsiveGrid";
+  @import "layout/space";
+  @import "utilities/background";
+  @import "utilities/borders";
+  @import "utilities/float";
+  @import "utilities/margin";
+  @import "utilities/opacity";
+  @import "utilities/overflow";
+  @import "utilities/padding";
+  @import "utilities/text";
+  @import "utilities/visibility";

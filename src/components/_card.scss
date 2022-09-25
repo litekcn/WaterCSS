@@ -1,0 +1,70 @@
+@import "../customize/components/card";
+
+.#{$prefix}card,
+.#{$prefix}card-float{
+	position: relative;
+	box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+	border-radius: var(--card-border-radius);
+	border: var(--card-border-width) solid var(--card-border-color);
+	box-shadow: var(--card-shadow);
+	background-color: var(--card-background-color);
+	color: var(--card-text-color);
+	padding: 0;
+	margin: var(--card-margin);
+	transition: box-shadow $global-animation-speed;
+	  -webkit-transition: box-shadow $global-animation-speed;
+
+	.#{$prefix}card-header {
+ 	 	position: relative;
+ 	 	text-overflow: ellipsis;
+
+  	img,
+  	video {
+   	  display: block;
+    	width: 100%;
+  	}
+	}
+
+	.#{$prefix}card-body {
+		position: relative;
+		padding: var(--card-body-padding);
+		font-size: var(--card-body-font-size);
+	}
+
+  .#{$prefix}card-footer {
+  	overflow: hidden;
+  	padding: 0;
+  	margin: 0;
+    //margin-bottom: 2px;
+  	float: right;
+
+  	&::before,
+  	&::after {
+  		display: table;
+  		clear: both;
+  	}
+
+  	&::after {
+  		content: '';
+  	}
+    
+    .#{$prefix}btn {
+      margin: 0;
+    }
+	}
+
+	&.#{$prefix}card-flat,
+	& .#{$prefix}card {
+		background: var(--card-flat-background);
+		border: var(--card-flat-border);
+		border-radius: var(--card-border-radius); // inherit
+		box-shadow: none;
+	}
+}
+
+.#{$prefix}card-hover:hover {
+	box-shadow: var(--card-hover-shadow);
+}

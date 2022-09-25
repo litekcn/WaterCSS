@@ -1,0 +1,7 @@
+$loading-speed: 0.8s;
+$loading-circle-width: 2.5px;
+
+:root {
+  --loading-speed: #{$loading-speed};
+  --loading-circle-width: #{$loading-circle-width};
+}

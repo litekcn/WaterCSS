@@ -1,0 +1,67 @@
+@import "../customize/components/form-upload";
+
+.#{$prefix}form-upload {
+	position: relative;
+	width: 100%;
+	display: block;
+	
+	appearance: none;
+	border: var(--form-upload-border);
+	border-radius: var(--form-upload-border-radius);
+	box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	cursor: pointer;
+	padding: var(--form-upload-padding-y) var(--form-upload-padding-x);
+	margin: 0;
+	text-align: center;
+	transition: var(--global-animation-speed);
+	  -webkit-transition: var(--global-animation-speed);
+  vertical-align: middle;
+	user-select: none;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	white-space: nowrap;
+
+	&:hover {
+		box-shadow: var(--form-upload-hover-shadow);
+	}
+
+	&::file-selector-button {
+    background: var(--form-upload-button-background);
+    border: var(--form-upload-button-border);
+    border-radius: var(--form-upload-button-border-radius);
+    color: var(--form-upload-button-color);
+    cursor: pointer;
+    padding: var(--form-upload-button-padding);
+    margin-right: 10px;
+    transition: var(--global-animation-speed);
+    	-webkit-transition: var(--global-animation-speed);
+
+    &:hover {
+    	background: var(--form-upload-button-hover-background);
+    	border: var(--form-upload-button-hover-border);
+    	border-radius: var(--form-upload-button-hover-border-radius);
+    	color: var(--form-upload-button-hover-color);
+    }
+  }
+
+  &::-webkit-file-upload-button {
+    background: var(--form-upload-button-background);
+    border: var(--form-upload-button-border);
+    border-radius: var(--form-upload-button-border-radius);
+    color: var(--form-upload-button-color);
+    cursor: pointer;
+    padding: var(--form-upload-button-padding);
+    margin-right: 10px;
+    transition: var(--global-animation-speed);
+    	-webkit-transition: var(--global-animation-speed);
+
+    &:hover {
+    	background: var(--form-upload-button-hover-background);
+    	border: var(--form-upload-button-hover-border);
+    	border-radius: var(--form-upload-button-hover-border-radius);
+    	color: var(--form-upload-button-hover-color);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+body {
+	background-color: #FCFCFC;
+}
+
+body[dark-mode] {
+	background-color: #121212;
+	color: #FCFCFC;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: transparent; 
+} 

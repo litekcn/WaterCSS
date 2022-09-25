@@ -1,0 +1,47 @@
+@import "../customize/components/alert";
+
+.#{$prefix}alert {
+	position: relative;
+	border-radius: var(--alert-border-radius);
+	border-left-width: var(--alert-border-width);
+	border-left-style: solid;
+	font-size: var(--alert-font-size);
+	padding: var(--alert-padding);
+	margin-bottom: var(--alert-margin-bottom);	
+
+	background-color: var(--alert-background-color-primary);
+	color: var(--alert-text-color-primary);
+	border-left-color: var(--alert-border-color-primary);
+
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	.#{$prefix}alert-icon {
+ 	  color: var(--alert-icon-color-primary);
+ 	  margin-right: 2px;
+ 	  user-select: none;
+ 	    -webkit-user-select: none; 
+ 	    -moz-user-select: none; 
+  }
+
+  .#{$prefix}alert-option-group {
+  	float: right;
+  }
+}
+
+@each $color-name in $imported-colors {
+  .#{$prefix}alert-#{$color-name} {
+	  background-color: var(--alert-background-color-#{$color-name});
+	  color: var(--alert-text-color-#{$color-name});
+	  border-left-color: var(--alert-border-color-#{$color-name});
+	  
+	  .#{$prefix}alert-icon {
+	  	color: var(--alert-icon-color-#{$color-name});
+	  	margin-right: 2px;
+	  }
+	}
+};

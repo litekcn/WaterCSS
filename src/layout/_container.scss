@@ -1,0 +1,23 @@
+@import "../customize/layout/container";
+
+.#{$prefix}container {
+	box-sizing: border-box;
+	max-width: $container-max-width;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 6px;
+	padding: 0 10px;
+}
+
+.#{$prefix}container-fluid {
+	margin: 2px;
+	padding: 0 16px;
+}
+
+.#{$prefix}container::after,
+.#{$prefix}container-fluid::after {
+  display: table;
+  clear: both;
+  content: '';
+}

@@ -1,0 +1,68 @@
+@import "../customize/components/form-range";
+
+.#{$prefix}form-range {
+	appearance: none;
+		-webkit-appearance: none;
+	background: transparent;
+	transition: var(--global-animation-speed);
+	  -webkit-transition: var(--global-animation-speed);
+	width: 100%;
+	vertical-align: middle;
+
+	&:active {
+		outline: none;
+
+		&::-webkit-slider-thumb{
+			box-shadow: var(--form-range-thumb-focus-shadow); 
+			background: var(--form-range-thumb-focus-background);
+		}
+
+		&::-moz-range-thumb { 
+			box-shadow: var(--form-range-thumb-focus-shadow); 
+			background: var(--form-range-thumb-focus-background);
+		}
+	}
+
+	&::-webkit-slider-thumb{
+		appearance: none;
+			-webkit-appearance: none;
+		background: var(--form-range-thumb-background);
+		border: var(--form-range-thumb-border);
+		border-radius: 5px;
+		box-shadow: var(--form-range-thumb-shadow);
+		transition: 0.2s;
+
+		height: var(--form-range-thumb-height);
+		width: var(--form-range-thumb-width);
+	}
+
+	&::-moz-range-thumb { 
+		appearance: none;
+		background: var(--form-range-thumb-background);
+		border: var(--form-range-thumb-border);
+		border-radius: 5px;
+		box-shadow: var(--form-range-thumb-shadow);
+		transition: 0.2s; 
+
+		height: var(--form-range-thumb-height);
+		width: var(--form-range-thumb-width);
+	}
+
+	&::-webkit-slider-runnable-track {
+    background-color: var(--form-range-track-background);
+    border-radius: var(--form-range-track-border-radius);
+    border-color: transparent;
+		color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+	}
+
+  &::-moz-range-track {
+    background-color: var(--form-range-track-background);
+    border-radius: var(--form-range-track-border-radius);
+    border-color: transparent;
+		color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../customize/components/loading";
+
+.#{$prefix}loading {
+  pointer-events: none;
+
+	&:before {
+    animation: spinner $loading-speed linear infinite;
+    border: $loading-circle-width solid currentColor;
+    border-radius: 9999px;
+    border-right-color: transparent;
+		content: '';
+	  display: inline-block;
+    height: 1em;
+    vertical-align: text-bottom;
+    width: 1em;
+    pointer-events: none;
+  }
+}
+
+@keyframes spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}

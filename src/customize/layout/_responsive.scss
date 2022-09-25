@@ -1,0 +1,10 @@
+$grid-size-name: xs, sm, md, lg, xl;
+$grid-col-count: 12;
+
+$grid-size-map: (
+  xs: 0,
+  sm: 600px,
+  md: 1024px,
+  lg: 1440px,
+  xl: 1920px, 
+);

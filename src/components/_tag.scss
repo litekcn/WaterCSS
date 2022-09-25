@@ -1,0 +1,28 @@
+@import "../customize/components/tag";
+
+.#{$prefix}tag {
+	position: static;
+
+	border-radius: var(--tag-border-radius);
+	padding: var(--tag-padding);
+	margin-right: var(--tag-margin);
+
+	user-select: none;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+
+	background-color: var(--tag-background-color-primary);
+	color: var(--tag-text-color-primary);
+
+	.#{$prefix}tag-close {
+		cursor: pointer;
+		margin-left: 12px;
+	}
+}
+
+@each $color-name in $imported-colors {
+	.#{$prefix}tag-#{$color-name} {
+		background-color: var(--tag-background-color-#{$color-name});
+		color: var(--tag-text-color-#{$color-name});
+	}
+};

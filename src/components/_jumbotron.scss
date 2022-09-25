@@ -1,0 +1,48 @@
+@import "../customize/components/jumbotron";
+
+.#{$prefix}jumbotron {
+	background: var(--jumbotron-background);
+	box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: var(--jumbotron-padding);
+	text-align: var(--jumbotron-text-align);
+	
+	&[align=center] {
+		text-align: center;
+	}
+	
+	&[align=left] {
+		text-align: left;
+	}
+	
+	&[align=right] {
+		text-align: right;
+	}
+
+	.#{$prefix}jumbotron-title {
+		color: var(--jumbotron-title-text-color);
+		font-size: var(--jumbotron-title-font-size);
+		font-weight: 700;
+		margin: var(--jumbotron-title-margin-y) 0;
+
+		.#{$prefix}jumbotron-title-bold {
+			color: var(--jumbotron-title-bold-color);
+		}
+	}
+
+	.#{$prefix}jumbotron-subtitle {
+		font-size: var(--jumbotron-subtitle-font-size);
+    margin: var(--jumbotron-subtitle-margin-y) 0;
+	}
+
+	.#{$prefix}jumbotron-btn-group {
+		position: static;
+		box-sizing: border-box;
+		  -webkit-box-sizing: border-box;
+		display: block;
+		margin: var(--jumbotron-button-group-margin-y) 0;
+	}
+}

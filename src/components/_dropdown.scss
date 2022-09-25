@@ -1,0 +1,82 @@
+@import "../customize/components/dropdown";
+
+.#{$prefix}dropdown {
+	position: relative;
+
+	.#{$prefix}dropdown-menu {
+		position: absolute;
+
+		top: 30px;
+		left: 0;
+		width: var(--dropdown-menu-width);
+		background-color: var(--dropdown-menu-background);
+		border: var(--dropdown-menu-border);
+		border-radius: var(--dropdown-menu-border-radius);
+		box-shadow: var(--dropdown-menu-shadow);
+		cursor: pointer;
+		margin-top: 2px;
+		padding: var(--dropdown-menu-padding-y) var(--dropdown-menu-padding-x);
+		opacity: 0;
+		transition: var(--global-animation-speed);
+		  -webkit-transition: var(--global-animation-speed);
+		visibility: hidden;
+		z-index: 1;
+
+		.#{$prefix}dropdown-item {
+			border-radius: var(--dropdown-item-border-radius);
+			color: var(--dropdown-item-text-color);
+			list-style: none;
+			padding: var(--dropdown-item-padding-y) var(--dropdown-item-padding-x);
+			transition: ease-in var(--global-animation-speed);
+		  	-webkit-transition: ease-in var(--global-animation-speed);
+
+			&:hover {
+				background-color: var(--dropdown-item-hover-background);
+	      color: var(--dropdown-item-hover-text-color);
+			}
+		}
+
+		.#{$prefix}dropdown-menu-header {
+			list-style: none;
+			color: var(--dropdown-menu-header-text-color);
+			font-size: var(--dropdown-menu-header-font-size);
+			margin-left: var(--dropdown-menu-header-margin-left);
+			margin-bottom: var(--dropdown-menu-header-margin-y);
+		}
+
+		.#{$prefix}dropdown-menu-divider {
+			height: 0;
+			margin: var(--dropdown-menu-divider-margin) 0;
+			overflow: hidden;
+			list-style: none;
+			border-top: var(--dropdown-menu-divider-border);
+		}
+	}
+
+	@media (pointer: coarse) {
+		.#{$prefix}dropdown-trigger:hover {
+			& + .#{$prefix}dropdown-menu {
+				display: block;
+				opacity: 99%;
+				transition: var(--global-animation-speed);
+					-webkit-transition: var(--global-animation-speed);
+				visibility: visible;
+			}
+		}
+	}
+	
+	.#{$prefix}dropdown-trigger:focus {
+		& + .#{$prefix}dropdown-menu {
+			display: block;
+			opacity: 99%;
+			transition: var(--global-animation-speed);
+		  	-webkit-transition: var(--global-animation-speed);
+			visibility: visible;
+		}
+	}
+
+	.#{$prefix}dropdown-menu:hover {
+		display: block;
+		opacity: 99%;
+	}
+}

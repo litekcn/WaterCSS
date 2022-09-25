@@ -1,0 +1,64 @@
+$card-border-color: rgb(200,200,200);
+$card-border-radius: 12px;
+$card-border-width: 0px;
+$card-background-color: white;
+$card-shadow: 1px 1px 6px #DDDDDD;
+$card-hover-shadow: 2px 2px 8px #CCCCCC;
+$card-text-color: rgb(25,25,25);
+$card-margin: 2px;
+
+$card-body-padding: 12px;
+$card-body-font-size: 16px;
+
+$card-flat-background: #F8F8F8;
+$card-flat-border: none;
+
+$card-border-color-dark: rgb(200,200,200);
+$card-background-color-dark: #242424;
+$card-shadow-dark: 1px 1px 6px #040404;
+$card-hover-shadow-dark: 2px 2px 8px #040404;
+$card-text-color-dark: #F2F2F2;
+
+$card-flat-background-dark: #060606;
+$card-flat-border-dark: #121212;
+
+:root {
+  --card-border-color: #{$card-border-color};
+  --card-border-radius: #{$card-border-radius};
+  --card-border-width: #{$card-border-width};
+  --card-background-color: #{$card-background-color};
+  --card-shadow: #{$card-shadow};
+  --card-hover-shadow: #{$card-hover-shadow};
+  --card-text-color: #{$card-text-color};
+  --card-margin: #{$card-margin};
+  
+  --card-body-padding: #{$card-body-padding};
+  --card-body-font-size: #{$card-body-font-size};
+  
+  --card-flat-background: #{$card-flat-background};
+  --card-flat-border: #{$card-flat-border};
+}
+
+@media (refers-color-scheme: dark) {
+  :root {
+    --card-border-color: #{$card-border-color-dark};
+    --card-background-color: #{$card-background-color-dark};
+    --card-shadow: #{$card-shadow-dark};
+    --card-hover-shadow: #{$card-hover-shadow-dark};
+    --card-text-color: #{$card-text-color-dark};
+    
+    --card-flat-background: #{$card-flat-background-dark};
+    --card-flat-border: #{$card-flat-border-dark};
+  }
+}
+
+[dark-mode] {
+  --card-border-color: #{$card-border-color-dark};
+  --card-background-color: #{$card-background-color-dark};
+  --card-shadow: #{$card-shadow-dark};
+  --card-hover-shadow: #{$card-hover-shadow-dark};
+  --card-text-color: #{$card-text-color-dark};
+  
+  --card-flat-background: #{$card-flat-background-dark};
+  --card-flat-border: #{$card-flat-border-dark};
+}

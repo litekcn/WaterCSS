@@ -1,0 +1,34 @@
+@import "../customize/components/blankslate";
+
+.#{$prefix}blankslate {
+	margin-right: auto;
+	margin-left: auto;
+	width: var(--blankslate-width);
+	text-align: center;
+
+	.#{$prefix}blankslate-title {
+		font-size: var(--blankslate-title-font-size);
+		color: var(--blankslate-title-text-color);
+	}
+
+	.#{$prefix}blankslate-subtitle {
+		font-size: var(--blankslate-subtitle-font-size);
+		color: var(--blankslate-subtitle-text-color);
+	}
+
+	.#{$prefix}blankslate-button-group {
+		white-space: pre-line;
+
+		.#{$prefix}btn {
+			margin-right: none;
+			margin-bottom: 6px;
+		}
+	}
+
+	.#{$prefix}blankslate-icon {
+		width: var(--blankslate-icon-size);
+		height: var(--blankslate-icon-size);
+
+		border-radius: var(--blankslate-icon-border-radius);
+	}
+}

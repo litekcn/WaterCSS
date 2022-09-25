@@ -1,0 +1,12 @@
+$color-error: rgb(255,85,65);
+$color-error-map: (
+	"100": func-tint-color($color-error, 80%),
+	"200": func-tint-color($color-error, 60%),
+	"300": func-tint-color($color-error, 40%),
+	"400": func-tint-color($color-error, 20%),
+	"500": $color-error,
+	"600": func-shade-color($color-error, 20%),
+	"700": func-shade-color($color-error, 40%),
+	"800": func-shade-color($color-error, 60%),
+	"900": func-shade-color($color-error, 80%)
+);

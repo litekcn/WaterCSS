@@ -1,0 +1,67 @@
+@import "../customize/components/dialog";
+
+.#{$prefix}dialog {
+	background-color: var(--dialog-background-color);
+	border: var(--dialog-border);
+	border-radius: var(--dialog-border-radius);
+	box-shadow: var(--dialog-shadow);
+	display: block;
+	position: fixed;
+
+	width: 80%;
+		min-width: 180px;
+		max-width: 400px;
+	min-height: 200px;
+  overflow: auto;
+  padding: var(--dialog-padding);
+
+	&::backdrop {
+		background-color: $dialog-backdrop-color;
+	}
+
+	& .backdrop {
+		position: fixed;
+  	top: 0; right: 0; bottom: 0; left: 0;
+  	background-color: $dialog-backdrop-color;
+	}
+
+	&:not([open]) {
+		display: none;
+	}
+
+	.#{$prefix}dialog-header {
+		color: var(--dialog-header-text-color);
+
+		.#{$prefix}dialog-header-title {
+			margin: 0;
+		}
+	}
+
+	.#{$prefix}dialog-body {
+		color: var(--dialog-body-text-color);
+		font-size: var(--dialog-body-font-size);
+		min-height: 120px;
+		padding: var(--dialog-body-padding-y) var(--dialog-body-padding-x);
+		display: block;
+		overflow: auto;
+	}
+
+	.#{$prefix}dialog-footer {
+
+		&:after {
+			display: table;
+			clear: both;
+			content: '';
+		}
+
+		.#{$prefix}dialog-footer-group {
+			float: var(--dialog-footer-group-float);
+		}
+	}
+}
+
+	._dialog_overlay {
+ 	 	position: fixed;
+  	top: 0; right: 0; bottom: 0; left: 0;
+  	background-color: $dialog-backdrop-color;
+	}

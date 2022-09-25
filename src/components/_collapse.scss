@@ -1,0 +1,44 @@
+@import "../customize/components/collapse";
+
+details.#{$prefix}collapse {
+	width: 100%;
+	
+	summary {
+		background-color: var(--collapse-header-background-color);
+		border: var(--collapse-header-border);
+		border-radius: var(--collapse-header-border-radius);
+		box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		color: var(--collapse-header-text-color);
+		padding: var(--collapse-header-padding);
+		list-style: none;
+		width: 100%;
+
+		user-select: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+
+		&::webkit-details-maker {
+			display: none;
+		}
+	}
+
+	div {
+		background-color: var(--collapse-body-background-color);
+		border: var(--collapse-body-border);
+		border-radius: var(--collapse-body-border-radius);
+		box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		color: var(--collapse-body-text-color);
+		padding: var(--collapse-body-padding);
+		margin-top: var(--collapse-body-margin-top);
+		width: 100%;
+	}
+
+	&[open] {
+		summary {
+			border-bottom-left-radius: 0; 
+			border-bottom-right-radius: 0; 
+		}
+	}
+}

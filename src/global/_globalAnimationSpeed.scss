@@ -1,0 +1,5 @@
+$global-animation-speed: 0.2s;
+
+:root {
+  --global-animation-speed: #{$global-animation-speed};
+}

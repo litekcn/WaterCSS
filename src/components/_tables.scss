@@ -1,0 +1,91 @@
+@import "../customize/components/tables";
+
+.#{$prefix}table {
+	position: relative;
+
+	background-color: var(--tables-background-color);
+	border: var(--tables-border);
+	border-radius: var(--tables-border-radius);
+	border-spacing: 0;
+	box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
+	box-shadow: var(--tables-shadow);
+	padding: var(--tables-padding);
+	z-index: 0;
+
+	thead {
+		background-color: var(--tables-head-background-color);
+		border-collapse: collapse;
+		color: var(--tables-head-text-color) !important;
+		margin-bottom: var(--tables-head-margin);
+
+		th {
+			border-bottom: var(--tables-border);
+			position: relative;
+			padding: var(--tables-head-item-padding);
+			min-width: 36px;
+
+			&:first-child {
+				border-radius: var(--tables-border-radius) 0 0 0 !important;
+			}
+
+			&:last-child {
+				border-radius: 0 var(--tables-border-radius) 0 0 !important;
+			}
+		}
+	}
+
+	tbody {
+		border-collapse: collapse;
+
+		tr {
+			position: relative;
+			margin-bottom: var(--tables-row-margin);
+
+			&:first-child {
+				td {
+					border-top: none;
+				}
+			}
+
+			&:last-child {
+
+				td {
+					border-bottom: none;
+				}
+
+				td:first-child, 
+				th:first-child {
+					border-radius: 0 0 0 var(--tables-border-radius);
+				}
+
+				td:last-child, 
+				th:last-child {
+					border-radius: 0 0 var(--tables-border-radius) 0;
+				}
+			}
+		}
+
+		th {
+			position: relative;
+			background-color: var(--tables-row-header-background-color);
+		}
+
+		td {
+			position: relative;
+
+			border: var(--tables-row-item-border);
+			padding: var(--tables-row-item-padding);
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+}
+
+.#{$prefix}table-fluid {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+}
