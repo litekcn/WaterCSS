@@ -32,6 +32,7 @@ $button-size-map: (
   xl: 18px
 );
 
+// Color-Degree
 $button-background-degree: 500;
 $button-border-degree: 600;
 
@@ -79,6 +80,7 @@ $button-border-map: (
 $button-fab-shadow-dark: 1px 1px 4px 1px #000000;
 $button-fab-hover-shadow-dark: 1px 1px 6px 2px #000000;
 
+// Color-Degree
 $button-background-degree-dark: 400;
 $button-border-degree-dark: 500;
 
@@ -118,9 +120,11 @@ $button-text-color-map-dark: (
   --button-margin-right: #{$button-margin-right};
   --button-margin-bottom: #{$button-margin-bottom};
 	
+	// FAB
   --button-fab-shadow: #{$button-fab-shadow};
   --button-fab-hover-shadow: #{$button-fab-hover-shadow};
   
+  // Color
   --button-background-color-primary: #{map.get($button-background-color-map, primary)};
   --button-background-color-secondary: #{map.get($button-background-color-map, secondary)};
   --button-background-color-success: #{map.get($button-background-color-map, success)};
@@ -145,6 +149,7 @@ $button-text-color-map-dark: (
   --button-text-color-error: #{map.get($button-text-color-map, error)};
   --button-text-color-light: #{map.get($button-text-color-map, light)};
 
+		// Border-Radius
   --button-border-size-square: #{map.get($button-border-map, square)};
   --button-border-size-default: #{map.get($button-border-map, default-md)};
   --button-border-size-default-xs: #{map.get($button-border-map, default-xs)};
@@ -154,6 +159,7 @@ $button-text-color-map-dark: (
   --button-border-size-default-xl: #{map.get($button-border-map, default-xl)};
   --button-border-size-round: #{map.get($button-border-map, round)};
   
+  // Padding
   --button-padding-x-xs: #{map.get($button-padding-x-map, xs)};
   --button-padding-x-sm: #{map.get($button-padding-x-map, sm)};
   --button-padding-x-md: #{map.get($button-padding-x-map, md)};
@@ -166,6 +172,7 @@ $button-text-color-map-dark: (
   --button-padding-y-lg: #{map.get($button-padding-y-map, lg)};
   --button-padding-y-xl: #{map.get($button-padding-y-map, xl)};
   
+  // Font Size
   --button-font-size-xs: #{map.get($button-size-map, xs)};
   --button-font-size-sm: #{map.get($button-size-map, sm)};
   --button-font-size-md: #{map.get($button-size-map, md)};

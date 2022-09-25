@@ -1,4 +1,7 @@
-$color-info: rgb(15,200,210);
+
+/* WuX-UI Customize-Color-Info */
+
+$color-info: rgb(54, 209, 218);
 $color-info-map: (
 	"100": func-tint-color($color-info, 80%),
 	"200": func-tint-color($color-info, 60%),

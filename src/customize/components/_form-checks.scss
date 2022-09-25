@@ -9,7 +9,6 @@ $form-checks-checked-background-color: map.get($color-primary-map, "500");
 $form-checks-checked-border-width: 1px;
 $form-checks-checked-border-color: map.get($color-primary-map, "500");
 $form-checks-checked-shadow: none;
-
 $form-checks-border-color-dark: #ABABAB;
 
 $form-checks-hover-background-color-dark: transparent;
@@ -18,7 +17,6 @@ $form-checks-hover-shadow-dark: 0px 0px 2px 1px #DDDDDD;
 $form-checks-checked-background-color-dark: map.get($color-primary-map, "400");
 $form-checks-checked-border-color-dark: map.get($color-primary-map, "400");
 $form-checks-checked-shadow-dark: none;
-
 :root {
   --form-checks-border-width: #{$form-checks-border-width};
   --form-checks-border-color: #{$form-checks-border-color};

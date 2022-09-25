@@ -9,7 +9,6 @@ $form-radios-checked-background-color: white;
 $form-radios-checked-border-width: 5px;
 $form-radios-checked-border-color: map.get($color-primary-map, "500");
 $form-radios-checked-shadow: none;
-
 $form-radios-border-color-dark: #ABABAB;
 
 $form-radios-hover-background-color-dark: transparent;
@@ -18,7 +17,6 @@ $form-radios-hover-shadow-dark: 0px 0px 2px 1px #DDDDDD;
 $form-radios-checked-background-color-dark: #FFFFFF;
 $form-radios-checked-border-color-dark: map.get($color-primary-map, "500");
 $form-radios-checked-shadow-dark: none;
-
 :root {
   --form-radios-border-color: #{$form-radios-border-color};
   --form-radios-border-radius: #{$form-radios-border-radius};

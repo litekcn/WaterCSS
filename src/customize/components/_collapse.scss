@@ -3,22 +3,18 @@ $collapse-header-border: none;
 $collapse-header-border-radius: 12px;
 $collapse-header-padding: 10px 12px;
 $collapse-header-text-color: #121212;
-
 $collapse-body-background-color: #F8F8F8;
 $collapse-body-border: none;
 $collapse-body-border-radius: 0 0 12px 12px;
 $collapse-body-padding: 12px;
 $collapse-body-margin-top: 4px;
 $collapse-body-text-color: #121212;
-
 $collapse-header-background-color-dark: #161616;
 $collapse-header-border-dark: none;
 $collapse-header-text-color-dark: #FCFCFC;
-
 $collapse-body-background-color-dark: #282828;
 $collapse-body-border-dark: none;
 $collapse-body-text-color-dark: #FFFFFF;
-
 :root {
   --collapse-header-background-color: #{$collapse-header-background-color};
   --collapse-header-border: #{$collapse-header-border};

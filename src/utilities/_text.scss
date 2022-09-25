@@ -1,0 +1,5 @@
+
+[text-color] {
+  --attr-custom-text-color: attr(text-color color);
+  color: var(--attr-custom-text-color) !important;
+}

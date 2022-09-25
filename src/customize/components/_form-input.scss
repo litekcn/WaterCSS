@@ -58,7 +58,6 @@ $form-input-border-map: (
   lg: 14px,
   xl: 16px,
 );
-
 $form-input-background-dark: #121212;
 $form-input-text-color-dark: #FCFCFC;
 $form-input-border-color-dark: #AAAAAA;
@@ -79,7 +78,6 @@ $form-input-invalid-text-color-dark: map.get($color-error-map , "300");
 $form-input-invalid-shadow-dark: 0 0 4px map.get($color-error-map , "200");
 
 $form-input-disabled-opacity-dark: 40%;
-
 :root {
 	--form-input-background: #{$form-input-background};
 	--form-input-border-color: #{$form-input-border-color};

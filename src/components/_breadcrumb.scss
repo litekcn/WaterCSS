@@ -3,7 +3,7 @@
 .#{$prefix}breadcrumb {
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
+	list-style: none;// No List-Dot
 
 	background-color: var(--breadcrumb-background-color);
 	border: var(--breadcrumb-border);

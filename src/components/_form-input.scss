@@ -22,6 +22,7 @@
 	transition: var(--global-animation-speed);
 	  -webkit-transition: var(--global-animation-speed);
 
+  // Default
 	padding: var(--form-input-padding-y-md) var(--form-input-padding-x-md);
 
 	&:hover:not(:disabled):not(:focus):not(:invalid) {

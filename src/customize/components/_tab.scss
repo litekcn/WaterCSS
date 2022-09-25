@@ -1,4 +1,6 @@
 
+/* WuX-UI Components-Tab */
+
 $tab-item-background: transparent;
 $tab-item-border: none;
 $tab-item-border-radius: 0;
@@ -12,6 +14,7 @@ $tab-item-focus-text-color: map.get($color-primary-map, "500");
 $tab-content-padding: 0;
 $tab-content-margin: 12px;
 
+// -------------------- Dark Mode --------------------
 $tab-item-background-dark: transparent;
 $tab-item-border-dark: none;
 $tab-item-text-color-dark: #FCFCFC;
@@ -20,6 +23,7 @@ $tab-item-focus-background-dark: transparent;
 $tab-item-focus-border-color-dark: map.get($color-primary-map, "500");
 $tab-item-focus-text-color-dark: map.get($color-primary-map, "300");
 
+// -------------------- CSS Variables --------------------
 :root {
   --tab-item-background: #{$tab-item-background};
   --tab-item-border: #{$tab-item-border};
