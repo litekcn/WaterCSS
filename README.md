@@ -2,8 +2,8 @@
 
 </div>
 
-<h1 align="center">LiUX & LiDesign Team</h1>
+<h1 align="center">LiUX For CSS</h1>
 
 <h5 align="center">
-  One Next Design Language & Framework.
+  LiUX 的 CSS 实现
 </h5>
