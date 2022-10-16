@@ -1,6 +1,6 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/lidsgn/.github/main/profile/LiUX%20Logo%20Banner.png" alt="LiUX Logo Banner" />
-</p>
+<div align="center">
+
+</div>
 
 <h1 align="center">LiUX & LiDesign Team</h1>
 
