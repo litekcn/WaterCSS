@@ -9,6 +9,6 @@
 </h5>
 
 <p align="center">
-  本项目暂停维护
+  本项目暂停维护，建议您使用 <a herf="https://github.com/litekcn/LiDesign">LiDesign</a>
 </p>
 
